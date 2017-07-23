@@ -1,0 +1,221 @@
+/*adding custom fonts*/
+@font-face{
+  font-family: "ArgosANouveau";
+  src: url("../fonts/ArgosANouveau.ttf");
+}
+@font-face{
+  font-family:"ADAMCG";
+  src: url("../fonts/ADAM.CG.otf");
+} 
+@font-face{
+  font-family:"Droid Sans";
+  src: url("../fonts/DroidSans.ttf");
+}
+/*make text look sharpger*/
+html{
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+body{
+  background-color: #F5F4F2;
+  font-family: "Droid Sans", "Helvetica Neue",Helvetica,Arial,sans-serif; 
+}
+header{
+  text-align: center;
+  height:50vh;
+}
+h1{
+  font-family: "ADAMCG";
+  font-size: 3em;
+  font-weight: bold;
+  color:#FFF;
+  text-shadow:rgba(0,0,0,.6) 0 1px 6px;
+  margin:0;
+}
+h2{
+  font-family: "ADAMCG", sans-serif;
+}
+hr{
+  border-color: #DBDBDB;
+}
+.heading{
+  color: #FFF;
+}
+.heading:hover, .heading:focus{
+  color: #FFF;
+}
+.heading:focus{
+  text-decoration: none;
+}
+.introduction{
+  font-size: 1em;
+}
+
+/*container which centers vertically and horizontally*/
+.center-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.main-container{
+  max-width:1170px;
+  max-height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 2em;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+}
+.resize{
+  margin:0 auto;
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.portrait{
+  width:240px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-color:#F5F4F2;
+  border-radius:99px;  
+  text-align: left;
+  position: relative;
+  box-shadow: 0 0 3px #F5F4F2;
+}
+.portrait img{
+  max-height:6.5em;
+  max-width:6.5em;
+  border-style:solid;
+  border-radius:50%;
+  border-width:4px;
+  border-color:#FFF;
+  overflow:hidden;
+  margin: 4px;
+}
+.portrait p{
+  display: inline-block;
+}
+
+/*customized hr line break*/
+.content-divider{
+  margin:80px 0;
+  border-top: 1px solid #DBDBDB;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar .navbar-inverse .navbar-static-top .container-fluid{
+  text-align: center;
+}
+.navbar-header{
+  display:inline-block;
+  float:none;
+}
+.nav .navbar-nav{
+  display:inline-block;
+}
+.container-fluid{
+  text-align: center;
+}
+
+
+/*Flip around the padding for proper display in narrow viewports*/
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+  width:100%;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/*the paragraphing formatting classes, used with jQuery*/
+.stretch_it{
+  white-space: nowrap;
+}
+.justify{
+  text-align:justify;
+}
+
+#logo{
+  height:30px;
+  width:auto;
+  margin-top: -3px;
+  display: inline;
+}
+.section .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section h2 {
+  font-weight: normal;
+}
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the featurette headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/*Responsive sizes to tablets and desktop*/
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+  header{
+    height:500px;
+  }
+  h1{
+    font-size: 3.5em;
+  }
+  .introduction{
+    font-size: 1.2em;
+  }
+  .navbar .navbar-collapse{
+    display:inline-block !important;
+  }
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+     margin-left: 0px; 
+  }
+  .navbar-nav {
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 992px){
+  h1{
+    font-size: 5em;
+  }
+  .container {
+    width: 970px;
+  }
+}

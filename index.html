@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Shurui Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take a walk, a Great Walk, through some of New Zealand’s most awe-inspiring landscapes. New Zealand's nine Great Walks are premier tracks that pass through diverse and spectacular scenery." />
+    <meta name="keywords" content="nz, great, walks, milford, kepler, routeburn, tracks,tramping" />
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>NZ Great Walks</title>
+
+    <!-- stylesheets and font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" href = "css/bootstrap.min.css" >
+    <link rel = "stylesheet" href = "css/main.css"> <!--Make sure main.css is called later so its takes precedence-->
+    <link rel = "stylesheet" href = "css/index.css">
+    <style>
+
+    </style>
+</head> 
+<body>
+    <a name = "scroll-top"></a><!-- back to top link takes the user up here-->
+    <!-- Nav bar-->
+    <nav class = "navbar-wrapper">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation"><!--Bootstrap nav bar type and style -->
+            <div class="container-fluid">
+                <!-- title and logo and toggle is grouped for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img id = "logo" src = "images/logo.png" alt ="logo">NZ Great Walks</a><!-- title and logo -->
+                </div>
+                <div class="collapse navbar-collapse" id="collapse"><!-- collect the remaining nav links for mobile grouping -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tracks<span class="caret"></span></a>
+                            <ul class="dropdown-menu"><!--drop down menu-->
+                                <li><a href="tracks.html">Tracks</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="tracks.html#kepler">Kepler</a></li>
+                                <li><a href="tracks.html#milford">Milford</a></li>
+                                <li><a href="tracks.html#routeburn">Routeburn</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact%20me.html">Join/More info</a>
+                        </li>
+                        <li>
+                            <a href="contact%20me.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </nav>
+    <!-- nav bar ends-->
+
+    <header>
+        <div class = "center-wrapper"><!-- centered heading-->
+            <a class = "heading" href = "#map"><h1>NZ Great Walks</h1></a>
+        </div>
+
+    </header>
+
+    <div id =  "seperater"></div><!-- blue line at the bottom of banner -->
+
+    <article>
+
+        <div class = "portrait"><!-- Portrait area -->
+            <img src = "images/Display Picture.jpg" class = "img-shadow" alt = "Display Picture">
+            <p class = "description">
+                <b style = "font-size:1.1em">Shurui Li</b>
+                <br>
+                15th August, 2015
+            </p>
+        </div>
+        <div class = "main-container"><!-- content starts here -->
+            <div class = "container" style = "text-align:center;">
+                <div class = "col-md-8" style= "float:none;display:inline-block"><!-- a full sized column is 12, using 8 for the right amount of letter per line -->
+                    <p class = "stretch resize introduction">Take a walk, a Great Walk, through some of New Zealand’s most awe-inspiring landscapes.
+                    New Zealand's nine Great Walks are premier tracks that pass through diverse and spectacular scenery. From native forests, lakes and rivers to rugged mountain peaks, deep gorges and vast valleys...there's a Great Walk for everyone!
+                    Great Walks tracks are well formed and easy to follow. While most people prefer to explore on their own terms, guided trips offer a bit more comfort. Great Walks are accessible from major towns that are well serviced by local operators and accommodation and transport providers.
+                    </p>
+                </div>
+
+                <p style = "margin-top:1em;margin-bottom:1em"><a class="btn btn-default" href="contact%20me.html#contact-info" role="button">Join me &raquo;</a></p><!-- Join me button -->
+
+                <div class = "triangle"><a href = "#map" role = "button"></a></div><!--Clickable triangle -->
+
+                <a name = "map"><hr class = "content-divider"/></a><!-- hr break  to start content-->
+
+                <div class="row featurette">
+                    <div class = "col-md-6 left"><!--Image map, since 12 is a full column, 6 is half, the map and the article takes half each -->
+                        <div class ="col-md-6"><!-- image of image map -->
+                            <img src="images/image%20map.jpg" alt="Walks" usemap="#Map" style = "height:auto;width:197px;border-style:solid;border-width:2px;border-color:#5796D6;display:inline-block;" />
+                            <map name="Map" id="Map">
+                                <area alt="Routeburn" title="Routeburn" href="tracks.html#routeburn" shape="rect" coords="82,79,181,100" />
+                                <area alt="Milford" title="Milford" href="tracks.html#milford" shape="rect" coords="42,104,119,130" />
+                                <area alt="Kepler" title="Kepler" href="tracks.html#kepler" shape="rect" coords="31,137,104,164" />
+                            </map>
+                        </div>
+
+                        <div class = "col-md-6 left"><!-- clickable locations of image map -->
+                            <a href = "tracks.html#routeburn"><h2>Routeburn</h2></a>
+                            <p>Beautiful beyond words</p>
+                            <a href = "tracks.html#mildford"><h2>Milford</h2></a>
+                            <p>The finest walk in the world</p>
+                            <a href = "tracks.html#kepler"><h2>Kepler</h2></a>
+                            <p>An adventure above the clouds</p>
+                        </div>
+                        <p style = "margin-top:2em;text-align:center;"><a class="btn btn-default" href="tracks.html" role="button">More on tracks &raquo;</a></p><!-- More on tracks -->
+                    </div>
+                    <div class = "col-md-6"><!-- article besides image map-->
+                        <p class = "stretch resize">
+                            <b>Walker information</b>
+                            <br />
+                            New Zealand’s sparse population and huge wilderness areas mean that most walking tracks are remote from many of the comforts of civilisation. Facilities at the 900 huts maintained by DOC are basic, and walkers need to equip themselves with adequate food and clothing.
+                            <br />
+                            Weather conditions can change rapidly, especially in the mountains, and it is essential, even in summer, to carry warm, waterproof clothing. No hike should be undertaken without consulting a detailed guide book and a map.
+                            <br />
+                            For any of the 'Great Walks', a pass is required for accommodation in huts, but permits or admission fees are not required for day walking. Passes are issued by the Department of Conservation.
+                        </p>
+                        <p style = "margin-top:2em;text-align:center;"><a class="btn btn-default" href="contact%20me.html#contact-info" role="button">Want to join? &raquo;</a></p>
+                    </div>
+                </div>
+                
+                <hr class = "content-divider"/><!-- hr break of end of main content -->
+
+                <footer>
+                    <p class="pull-right"><a href="#scroll-top">&uarr;  Back to top</a></p><!-- the back to top button is always at the right side -->
+                    <p>&copy; 2015 My NZ Great Walks &middot; Shurui Li  &middot; All Rights Reserved &middot; <a href="contact%20me.html">Contact Me</a></p>
+                </footer>
+            </div>
+        </div>
+    </article>
+
+    <!-- Puts JavaScript at the bottom of page so page content is loaded first -->
+    <script src="js/jquery-2.1.4.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>$("header").backstretch("images/banner-index.jpg");</script>
+
+</body>
+</html>
+
+
+
+<!-- By Shurui Li -->

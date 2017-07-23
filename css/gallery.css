@@ -1,0 +1,107 @@
+html,
+body {
+    height: 100%;
+    background-color: #f5f4f2;
+}
+h2{
+  margin-top:10px;
+}
+
+p{
+  font-size:1.1em;
+  text-align: center;
+}
+
+/*carousel is the bootstrap component of the slideshow*/
+.carousel{
+  margin-bottom: 60px;
+}
+.carousel-caption p{
+  text-align: center;
+}
+header.carousel {
+  height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+  height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*fixed size thumbnails for mobile and desktop*/
+.thumbnail{
+    height:150px;
+    width:150px;
+    overflow:hidden;
+    margin-bottom: 0px;
+}
+/*formatting*/
+.col-lg-4 .thumbnail{
+    vertical-align: middle;
+    text-align: center;
+    display:inline;
+    margin-bottom: 0px;
+}
+.col-md-7 p{
+    text-align: left;
+}
+.col-md-5 p{
+    text-align: left;
+}
+.row{
+    margin-left: 0px;
+}
+.row .col-sm-4{
+    padding:0;
+}
+
+/*responsive*/
+@media (min-width: 768px) {
+
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 768px){
+    .col-sm-4 {
+        width: auto;
+    }
+    .col-lg-4  p{
+        max-width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 992px){
+    header.carousel {
+        height: 500px;
+    }
+}
+@media (min-width: 1196px){
+    .marketing .col-lg-4 p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+

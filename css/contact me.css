@@ -1,0 +1,24 @@
+h2{
+	font-size: 2.5em;
+}
+.container{
+	text-align: left;
+}
+.list{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+/*aligns the lists with their heading*/
+.list li{
+	margin-left: 18px;
+}
+
+footer{
+	text-align: center;
+}
+
+/*makes the informatoin sections in the same line*/
+.col-md-4{
+	float: left;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Shurui Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Want to start your own adventure in one of the NZ Great Walks? Want to know more about NZ Great Walks?" />
+    <meta name="keywords" content="nz, great, walks, milford, kepler, routeburn, tracks,tramping" />
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Join me in the journey or Subscribe for more - NZ Great Walks</title>
+
+    <!-- stylesheets and font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" href = "css/bootstrap.min.css" >
+    <link rel = "stylesheet" href = "css/main.css"> <!--Make sure main.css is called later so its takes precedence-->
+    <link rel = "stylesheet" href = "css/contact%20me.css">
+    <style>
+
+    </style>
+</head> 
+<body>
+    <a name = "scroll-top"></a><!-- back to top link takes the user up here-->
+    <!-- Nav bar-->
+    <nav class = "navbar-wrapper">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation"><!--Bootstrap nav bar type and style -->
+            <div class="container-fluid">
+                <!-- title and logo and toggle is grouped for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img id = "logo" src = "images/logo.png" alt ="logo">NZ Great Walks</a><!-- title and logo -->
+                </div>
+                <div class="collapse navbar-collapse" id="collapse"><!-- collect the remaining nav links for mobile grouping -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tracks<span class="caret"></span></a>
+                            <ul class="dropdown-menu"><!--drop down menu-->
+                                <li><a href="tracks.html">Tracks</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="tracks.html#kepler">Kepler</a></li>
+                                <li><a href="tracks.html#milford">Milford</a></li>
+                                <li><a href="tracks.html#routeburn">Routeburn</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact%20me.html">Join/More info</a>
+                        </li>
+                        <li>
+                            <a href="contact%20me.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </nav>
+    <!-- nav bar ends-->
+
+    <header>
+
+        <div class = "center-wrapper">
+            <h1><a class = "heading" href = "#contact-info">Information</a></h1>
+        </div>
+
+    </header>
+
+    <div id =  "seperater"></div>
+
+    <article>
+
+            <div class = "container">
+                <div class="row featurette" style ="padding-left:10%;padding-right:10%;">
+                    <div class = "col-md-4"><!-- 3 sections of information, since col-12-md is full column each informations should be 1/3 thus col-4-md -->
+                        <a name = "contact-info"></a>
+                        <h2 class="featurette-heading">Interested?</h2>
+                        <hr />
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="fname">First Name:</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Your First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" class="form-control" id="lname" placeholder="Your Last Name">
+                            </div>
+                            <!-- <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div> -->
+                            <button type="submit" class="btn btn-default">Subscribe</button>
+                         </form>
+                    </div>
+                    <div class = "col-md-4">
+                        <h2 class = "featurette-heading">Site Author</h2>
+                        <hr />
+                        <p>
+                            <b>Site By: </b>Shurui Li
+                            <br />
+                            <b>Email: </b>redimpure@gmail.com
+                            <br />
+                            <b>Github: </b><a href = "https://github.com/shurui-li">https://github.com/shurui-li</a>
+                        </p>
+
+                        <p>Disclaimer: This site is made by Shurui Li. All text and images from <a href = "http://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/">NZ Great Walks</a>, they are provided to me to learn HTML, CSS and Javascript. If you are the owner and prefer not to see them here, please contact me.</p>
+                        
+                    </div>
+                    <div class = "col-md-4">
+                        <h2 class="featurette-heading">Locations</h2>
+
+                        <hr />
+                         
+                        <b>South Island Great Walks:</b>
+                        <ul class = "list">
+                            <li>Milford Track</li>
+                            <li>Routeburn Track</li>
+                            <li>Kepler Track</li>
+                            <li>Rakiura Track</li>
+                            <li>Heaphy Track</li>
+                            <li>Abel Tasman Coastal Track</li>
+                        </ul>
+                        <b>North Island Great Walks:</b>
+                        <ul class ="list">
+                            <li>Tongariro Northern Circuit</li>
+                            <li>Lake Waikaremoana Track</li>
+                            <li>Whanganui Journey</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style = "margin-top:2em;text-align:center"><a class="btn btn-default" href="index.html" role="button">&#171; Back to main</a></p><!-- back to main button -->
+
+
+                <hr class = "content-divider"/>
+                <footer>
+                    <p class="pull-right"><a href="#scroll-top">&uarr;  Back to top</a></p>
+                    <p>&copy; 2015 My NZ Great Walks &middot; Shurui Li  &middot; All Rights Reserved &middot; <a href="contact%20me.html">Contact Me</a></p>
+                </footer>
+            </div>
+    </article>
+    
+    <!-- Puts JavaScript at the bottom of page so page content is loaded first -->
+    <script src="js/jquery-2.1.4.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>$("header").backstretch("images/gallery/RouteburnTrack10.jpg");</script><!-- banner -->
+
+</body>
+</html>
+
+
+
+<!-- By Shurui Li -->

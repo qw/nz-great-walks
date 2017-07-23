@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Shurui Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View stunning photos of the Kepler, Milford and Routeburn tracks of the NZ Great Walks." />
+    <meta name="keywords" content="nz, great, walks, milford, kepler, routeburn, tracks,tramping" />
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>View images of Kepler, Milford and Routeburn tracks - NZ Great Walks</title>
+
+    <!-- stylesheets and font -->
+    <link rel = "stylesheet" type="text/css" href = "css/bootstrap.min.css"/>
+    <link rel = "stylesheet" type="text/css" href = "css/ekko-lightbox.min.css">
+    <link rel = "stylesheet" type="text/css" href = "css/main.css"> <!--Make sure main.css is called later so its takes precedence-->
+    <link rel = "stylesheet" type="text/css" href = "css/gallery.css">
+    <style type="text/css" media="screen">
+        .square-thumb {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <a name = "scroll-top"></a><!-- back to top link takes the user up here-->
+    <!-- Nav bar-->
+    <nav class = "navbar-wrapper">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation"><!--Bootstrap nav bar type and style -->
+            <div class="container-fluid">
+                <!-- title and logo and toggle is grouped for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img id = "logo" src = "images/logo.png" alt ="logo">NZ Great Walks</a><!-- title and logo -->
+                </div>
+                <div class="collapse navbar-collapse" id="collapse"><!-- collect the remaining nav links for mobile grouping -->
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tracks<span class="caret"></span></a>
+                            <ul class="dropdown-menu"><!--drop down menu-->
+                                <li><a href="tracks.html">Tracks</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="tracks.html#kepler">Kepler</a></li>
+                                <li><a href="tracks.html#milford">Milford</a></li>
+                                <li><a href="tracks.html#routeburn">Routeburn</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact%20me.html">Join/More info</a>
+                        </li>
+                        <li>
+                            <a href="contact%20me.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </nav>
+    <!-- nav bar ends-->
+
+  <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url(images/gallery/28_KeplerTrack.jpg);"></div>
+                <div class="carousel-caption">
+                <a class = "heading" href = "#kepler">
+                    <h2>Kepler</h2>
+                    <p>Track</p>
+                </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(images/gallery/98_MilfordTrack.jpg);"></div>
+                <div class="carousel-caption">
+                <a class = "heading" href = "#milford">
+                    <h2>Milford</h2>
+                    <p>Track</p>
+                </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(images/gallery/RouteburnTrack10.jpg);"></div>
+                <div class="carousel-caption">
+                <a class = "heading" href = "#routeburn">
+                    <h2>Routeburn</h2>
+                    <p>Track</p>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control no-smooth-scroll" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control no-smooth-scroll" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <div class="container section">
+
+      <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img src = "images/gallery/thumbnails/30_Keplertrack.jpg" class="thumbnail" alt = "Kepler Track"> 
+                <h2>Kepler</h2>
+                <p class = "introduction">An adventure above the clouds</p>
+                <p><a class="btn btn-default" href="#kepler" role="button">View more &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src = "images/gallery/thumbnails/23_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                <h2>MilFord</h2>
+                <p class = "introduction">The finest walk in the world</p>
+                </p>
+                <p><a class="btn btn-default" href="#milford" role="button">View more &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src = "images/gallery/thumbnails/RouteburnTrack15.jpg" class="thumbnail" alt = "Routeburn Track">
+                <h2>Routeburn</h2>
+                <p class = "introduction">Beautiful beyond words</p>
+                <p><a class="btn btn-default" href="#routeburn" role="button">View more &raquo;</a></p>
+            </div>
+        </div>
+
+        <!-- sections of gallery begins -->
+        <a name = "kepler"><hr class="content-divider"></a>
+
+        <div class="row"><!-- Kepler gallery -->
+            <div class="col-md-7">
+                <div class="col-md-offset-2" style = "display:inline-block;margin-left:0px">
+                    <div class="row" style = "display:inline-block">
+                        <a href="images/gallery/8_KeplerTrack.jpg" data-toggle="lightbox" data-gallery="keplertrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/8_KeplerTrack.jpg" class="thumbnail" alt = "Kepler Track">
+                        </a>
+                        <a href="images/gallery/15_KeplerTrack.jpg" data-toggle="lightbox" data-gallery="keplertrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/15_KeplerTrack.jpg" class="thumbnail" alt = "Kepler Track">
+                        </a>
+                        <a href="images/gallery/3_KeplerTrack.jpg" data-toggle="lightbox" data-gallery="keplertrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/3_KeplerTrack.jpg" class="thumbnail" alt = "Kepler Track">
+                        </a>
+                        <a href="images/gallery/33_KeplerTrack.jpg" data-toggle="lightbox" data-gallery="keplertrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/33_KeplerTrack.jpg" class="thumbnail" alt = "Kepler Track">
+                        </a>
+                        <a href="images/gallery/40_KeplerTrack.jpg" data-toggle="lightbox" data-gallery="keplertrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/40_KeplerTrack.jpg" class="thumbnail" alt = "Kepler Track">
+                        </a>
+                        <a href="images/gallery/93_KeplerTrack.jpg" data-toggle="lightbox" data-gallery="keplertrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/93_KeplerTrack.jpg" class="thumbnail" alt = "Kepler Track">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="featurette-heading">Kepler <span class="text-muted">Track</span></h2>
+                <p>
+                The Kepler Track is a 60 km, 3-4 day loop track taking you from the gentle, beech-forested shores of lakes Te Anau and Manapouri to the tussocky alpine tops and grand Mt Luxmore. Your reward for the hill climb is a long section above bushline with marvellous panoramic views of the Kepler Mountains on one side, and lakes, rivers and hanging valleys on the other.
+                The Kepler Track is an excellent track for you and your family and friends, especially if you love the outdoors, want an adventure with a bit of a physical challenge that is not too hard to get to and has excellent facilities.
+                </p>
+                <p><a class="btn btn-default" href="tracks.html#kepler" role="button">Read More &raquo;</a><a href="#scroll-top" style = "margin-left:10px">Back to top</a></p>
+                
+            </div>
+         </div>
+
+        <a name = "milford"><hr class="content-divider"></a>
+
+        <div class="row"><!-- Milford gallery -->
+            <div class="col-md-7 col-md-push-5">
+                <div class="row" style = "display:inline-block">
+                    <a href="images/gallery/23_MilfordTrack.jpg" data-toggle="lightbox" data-gallery="milfordtrack" data-title="Milford Track" class="col-sm-4">
+                        <img src = "images/gallery/thumbnails/23_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                    </a>
+                    <a href="images/gallery/24_MilfordTrack.jpg" data-toggle="lightbox" data-gallery="milfordtrack" data-title="Milford Track" class="col-sm-4">
+                        <img src = "images/gallery/thumbnails/24_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                    </a>
+                    <a href="images/gallery/81_MilfordTrack.jpg" data-toggle="lightbox" data-gallery="milfordtrack" data-title="Milford Track" class="col-sm-4">
+                        <img src = "images/gallery/thumbnails/81_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                    </a>
+                    <a href="images/gallery/83_MilfordTrack.jpg" data-toggle="lightbox" data-gallery="milfordtrack" data-title="Milford Track" class="col-sm-4">
+                        <img src = "images/gallery/thumbnails/83_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                    </a>
+                    <a href="images/gallery/67_MilfordTrack.jpg" data-toggle="lightbox" data-gallery="milfordtrack" data-title="Milford Track" class="col-sm-4">
+                        <img src = "images/gallery/thumbnails/67_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                    </a>
+                    <a href="images/gallery/03_MilfordTrack.jpg" data-toggle="lightbox" data-gallery="milfordtrack" data-title="Milford Track" class="col-sm-4">
+                        <img src = "images/gallery/thumbnails/03_MilfordTrack.jpg" class="thumbnail" alt = "Milford Track">
+                    </a>
+                </div>  
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <h2 class="featurette-heading">Milford <span class="text-muted">Track</span></h2>
+                <p>Experience the stunning grandeur of the Milford Track - a 53.5 km walk over 4 days in beautiful Fiordland National Park. 
+                You'll be awed by natural wonders while walking in a spectacular, wild and beautiful part of New Zealand. There are sheer ice-carved valleys from a mountain pass, refreshing mountain rivers, peaceful forests and cascading waterfalls.
+                </p>
+                <p><a class="btn btn-default" href="tracks.html#milford" role="button">Read More &raquo;</a><a href="#scroll-top" style = "margin-left:10px">Back to top</a></p>
+                <!-- <div class="col-md-offset-2" style = "display:inline-block;margin-left:0px">
+                container for 2x6 gallery 
+                </div> -->
+            </div>
+        </div>
+
+        <a name = "routeburn"><hr class="content-divider"></a>
+
+        <div class="row featurette"><!-- Routeburn gallery -->
+            <div class="col-md-7">
+                <div class="col-md-offset-2" style = "display:inline-block;margin-left:0px">
+                    <div class="row" style = "display:inline-block">
+                        <a href="images/gallery/RouteburnTrack11.jpg" data-toggle="lightbox" data-gallery="routeburntrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/RouteburnTrack11.jpg" class="thumbnail" alt = "Routeburn Track">
+                        </a>
+                        <a href="images/gallery/RouteburnTrack7.jpg" data-toggle="lightbox" data-gallery="routeburntrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/RouteburnTrack7.jpg" class="thumbnail" alt = "Routeburn Track">
+                        </a>
+                        <a href="images/gallery/RouteburnTrack5.jpg" data-toggle="lightbox" data-gallery="routeburntrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/RouteburnTrack5.jpg" class="thumbnail" alt = "Routeburn Track">
+                        </a>
+                        <a href="images/gallery/RouteburnTrack3.jpg" data-toggle="lightbox" data-gallery="routeburntrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/RouteburnTrack3.jpg" class="thumbnail" alt = "Routeburn Track">
+                        </a>
+                        <a href="images/gallery/RouteburnTrack4.jpg" data-toggle="lightbox" data-gallery="routeburntrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/RouteburnTrack4.jpg" class="thumbnail" alt = "Routeburn Track">
+                        </a>
+                        <a href="images/gallery/RouteburnTrack15.jpg" data-toggle="lightbox" data-gallery="routeburntrack" data-title="Milford Track" class="col-sm-4">
+                            <img src = "images/gallery/thumbnails/RouteburnTrack15.jpg" class="thumbnail" alt = "Routeburn Track">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="featurette-heading">Routeburn <span class="text-muted">Track</span></h2>
+                <p>Experience a walk of a lifetime on the Routeburn Track - a 32 km, 2-4 day track weaving through beech-forested valleys and alongside clear green rivers, glistening alpine lakes and breathtaking views from a mountain pass.
+                Feel close to nature as you cross New Zealand’s Southern Alps and pass through the incredible landscapes of Mt Aspiring National Park and Fiordland National Park.
+                <!-- The Routeburn Track is the perfect track for you, and your friends or family, if you love being amongst nature and want an exciting outdoors adventure on a track that has excellent facilities. -->
+                </p>
+                <p><a class="btn btn-default" href="tracks.html#routeburn" role="button">Read More &raquo;</a><a href="#scroll-top" style = "margin-left:10px">Back to top</a></p>
+            </div>
+        </div>
+
+         <hr class="content-divider">
+
+
+
+        <footer>
+            <p class="pull-right"><a href="#scroll-top">&uarr;  Back to top</a></p>
+            <p>&copy; 2015 My NZ Great Walks &middot; Shurui Li  &middot; All Rights Reserved &middot; <a href="contact%20me.html">Contact Me</a></p>
+        </footer>
+
+    </div>
+
+    <!-- Puts JavaScript at the bottom of page so page content is loaded first -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ekko-lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                interval: 3000 //specifes the speed of the slideshow in ms
+            });
+        });
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox(); //normally when you click on an image it opens it up in a new tab, this prevents so and uses lightbox actions instead
+        }); 
+    </script>
+</body>

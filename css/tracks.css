@@ -1,0 +1,73 @@
+article{
+  font-family: "Open Sans", "Droid Sans" , sans-serif, arial;
+  position: relative;
+}
+.paragraphing{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.main-container{
+  margin-top:0px;
+}
+.col-md-7{
+  text-align: left;
+}
+.col-md-5{
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  /*-webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;*/
+}
+
+/*slogan*/
+.quick-description{
+  text-align: center;
+  margin-top:80px;
+}
+.quick-description b:hover{
+  text-decoration: underline;
+}
+.quick-description a{
+  color:#000;
+}
+.introduction{
+  font-style: 1em;
+}
+#seperater{
+  background:#101010;
+  padding:3px;
+}
+
+/*banner fading images*/
+.banner-container{
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+
+/*responsive*/
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .introdution{
+    font-size:1.2em;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1196px){
+    .marketing .col-lg-4 p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
